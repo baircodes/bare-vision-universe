@@ -3,18 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Bare Vision — Strategic Foresight and Consultancy" />
-  
   <title>BARE VISION — Futuristic Dunes</title>
 
-  <link rel="preconnect" href="https://unpkg.com" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-
   <link rel="stylesheet" href="styles.css" />
-
+  
   <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simplex-noise@3.0.0/simplex-noise.min.js"></script>
-</head>
+  </head>
 <body>
 
   <div id="three-container" aria-hidden="true"></div>
@@ -45,24 +39,19 @@
       </div>
     </section>
 
-    <section class="section mirror" id="mirror">
-      <div class="container">
-        <h2>The Mirror — 2h Consultation</h2>
-        <p>Reflection is the first step to projection.</p>
-      </div>
-    </section>
-
-    <section class="section blueprint" id="blueprint">
-      <div class="container">
-        <h2>The Blueprint & The Playbook</h2>
-        <p>Architecting your next decade.</p>
-      </div>
-    </section>
-
     <footer class="footer">
       <p>&copy; 2025 Bare Vision • BAIR Atmospheres</p>
     </footer>
   </main>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loader = document.getElementById('page-loader');
+        if(loader) loader.classList.add('hidden');
+      }, 2500);
+    });
+  </script>
 
   <script src="main3d.js"></script>
 </body>
